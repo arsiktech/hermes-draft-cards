@@ -1,0 +1,10 @@
+{
+  "name": "draft-cards",
+  "label": "Draft Cards",
+  "description": "Backend for the Draft Cards desktop plugin. It adds no dashboard tab.",
+  "icon": "Mail",
+  "version": "0.1.0",
+  "tab": { "hidden": true },
+  "entry": "dist/index.js",
+  "api": "plugin_api.py"
+}

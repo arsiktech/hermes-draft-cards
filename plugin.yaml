@@ -1,0 +1,18 @@
+name: draft-cards
+version: 0.1.0
+description: >-
+  Reviewable email and message drafts as cards in the Hermes desktop chat. Revisions highlight
+  what changed, you can edit inline, and nothing is sent until you press Send.
+author: arsiktech
+license: MIT
+homepage: https://github.com/arsiktech/hermes-draft-cards
+manifest_version: 2
+api_version: 1
+requires_hermes: ">=0.22.2"
+tags: [desktop, email, drafts, approval]
+provides_tools:
+  - draft_card
+  - draft_card_read
+  - draft_card_status
+provides_hooks: []
+requires_env: []
