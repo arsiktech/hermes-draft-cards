@@ -40,6 +40,11 @@ the words that changed; the user can edit inline; and nothing is sent until they
 
 - Never send a draft whose status is not `approved` unless the user explicitly approved it in
   chat; in that case call `draft_card_status` with `approved` first, then send.
+- Explicit approval means a message that names sending and refers to this draft ("send it",
+  "approved, send the reply to Anna"). A general instruction to continue the wider task ("do
+  that", "go ahead with the application") is not approval of the draft's text: ask once, with
+  the card shown. A request to "send them an email" before any draft exists means draft it and
+  show the card first.
 - If `draft_card_read` shows a newer version than the one approved, don't send: the user
   changed it after approving. Ask them to approve the new version.
 - Keep bodies plain text with blank lines between paragraphs. No Markdown in email bodies.
